@@ -1,4 +1,4 @@
-package com.sjapps.library.firework;
+package com.sjapps.fireworkExample;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,4 +11,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+
 }
