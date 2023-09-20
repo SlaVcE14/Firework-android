@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.sjapps.library.firework'
+    namespace 'com.sjapps.fireworkExample'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.sjapps.library.firework"
+        applicationId "com.sjapps.fireworkExample"
         minSdk 24
         targetSdk 33
         versionCode 1
