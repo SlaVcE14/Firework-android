@@ -5,4 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+    <com.sjapps.fireworkExample.Renderer
+        android:id="@+id/renderer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
