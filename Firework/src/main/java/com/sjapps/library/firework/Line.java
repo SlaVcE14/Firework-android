@@ -12,7 +12,6 @@ public class Line {
     Point pos;
     float angle;
     float dx = 10;
-    int dy = 10;
     Point target;
     private int alpha = 255;
     int time =0;
@@ -45,15 +44,10 @@ public class Line {
 
     public void draw(Canvas canvas, Paint paint){
 
-//        paint.setAntiAlias(true);
-//        paint.setStyle(Paint.Style.STROKE);
-//        paint.setStrokeWidth(5);
-//        paint.setColor(Color.RED); // TODO optimize
         paint.setColor(color);
         paint.setStrokeCap(Paint.Cap.ROUND);
         paint.setAlpha(alpha);
         Shader shader = new LinearGradient(pos.x, pos.y,pos.x + target.x, pos.y + target.y,  0x0fffffff,  color, Shader.TileMode.CLAMP);
-//        Shader shader = new LinearGradient(pos.x - fromAngle(angle).x, pos.y-fromAngle(angle).y,pos.x + target.x, pos.y + target.y,  0x0fffffff,  color, Shader.TileMode.CLAMP);
         paint.setShader(shader);
 
         canvas.drawLine(pos.x,pos.y,pos.x + target.x, pos.y + target.y,paint);
