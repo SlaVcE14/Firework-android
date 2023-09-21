@@ -44,13 +44,17 @@ public class Renderer extends View {
 
 
         if (r.nextInt(50) == 4 && fireworks.size() < 2){
-            fireworks.add(new Firework(r.nextInt(width),r.nextInt(height),0xFFC18B30,0xFFFFDA94));
+            Firework firework = new Firework(r.nextInt(width),r.nextInt(height),0xFFC18B30,0xFFFFDA94);
+
+            firework.setLineNum((r.nextInt(2) +2) * 10);
+            fireworks.add(firework.create());
         }
 
         Paint paint = new Paint();
         paint.setColor(Color.RED);
 
         for (Firework f : fireworks){
+
             f.update(canvas,paint);
             if (f.isFinished())
                 removeFireworks.add(f);
