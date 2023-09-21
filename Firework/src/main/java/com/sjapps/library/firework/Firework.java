@@ -35,7 +35,6 @@ public class Firework {
 //        paint.setAntiAlias(true);
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeWidth(3);
-//        paint.setMaskFilter(new BlurMaskFilter(2, BlurMaskFilter.Blur.NORMAL));
 
         for (Line l : lines){
             l.update();
