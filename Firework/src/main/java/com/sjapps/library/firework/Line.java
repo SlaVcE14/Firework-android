@@ -19,13 +19,15 @@ public class Line {
     int color;
     int l;
     float speed = 3;
+    int type = 0;
 
-    public Line(Point pos, float angle, @ColorInt int color, int l){
+    public Line(Point pos, float angle, @ColorInt int color, int l,int type){
         this.pos = pos;
         this.angle = angle;
         this.color = color;
         dx += l;
         this.l = l;
+        this.type = type;
     }
 
 
@@ -33,7 +35,8 @@ public class Line {
         target = fromAngle(angle);
         target.mul(dx);
         dx += speed;
-        pos.add(fromAngle(angle).mul(speed * .1f));
+        if (type == 0)
+            pos.add(fromAngle(angle).mul(speed * .1f));
         if (time > 200 && alpha > 0){
             alpha -=5;
         }

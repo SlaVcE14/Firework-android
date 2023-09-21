@@ -17,6 +17,7 @@ public class Firework {
     int color1;
     int color2;
     int lineNum = 30;
+    int type = 0;
 
     public Firework(float x, float y){
         this(x,y,0xffffffff);
@@ -51,6 +52,11 @@ public class Firework {
 
     }
 
+    public Firework setType(int type) {
+        this.type = type;
+        return this;
+    }
+
     public Firework setLineNum(int lineNum) {
         this.lineNum = lineNum;
         return this;
@@ -80,7 +86,13 @@ public class Firework {
     public Firework create(){
         Point point = new Point(x,y);
         for(int i = 0; i < lineNum; i++) {
-            Line p = new Line(new Point(point.x,point.y),range(lineNum,i),(color2!=-1? (i%2==0?color1:color2):color1),(i%2==0?0:15));
+            Line p = new Line(
+                    new Point(point.x,point.y),
+                    range(lineNum,i),
+                    (color2!=-1? (i%2==0?color1:color2):color1),
+                    (i%2==0?0:15),
+                    type
+            );
             lines.add(p);
         }
         return this;

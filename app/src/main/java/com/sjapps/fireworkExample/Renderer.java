@@ -47,6 +47,7 @@ public class Renderer extends View {
             Firework firework = new Firework(r.nextInt(width),r.nextInt(height),0xFFC18B30,0xFFFFDA94);
 
             firework.setLineNum((r.nextInt(2) +2) * 10);
+            firework.setType(r.nextInt(2));
             fireworks.add(firework.create());
         }
 
