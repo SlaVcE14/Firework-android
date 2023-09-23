@@ -6,6 +6,6 @@ Firework firework = new Firework(x,y,color1,color2).create();
 ```
 ## Update firework
 ```java
-firework.update(canvas);
+firework.update(canvas,paint);
 
 ```
