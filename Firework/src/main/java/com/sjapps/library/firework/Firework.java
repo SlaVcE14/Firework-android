@@ -10,7 +10,6 @@ import java.util.ArrayList;
 public class Firework {
 
     ArrayList<Line> lines = new ArrayList<>();
-    boolean isActive;
     boolean isFinished;
     float x;
     float y;
@@ -35,7 +34,6 @@ public class Firework {
     }
 
     public void update(Canvas canvas, Paint paint){
-//        paint.setAntiAlias(true);
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeWidth(3);
 
@@ -48,7 +46,6 @@ public class Firework {
             lines.clear();
             isFinished = true;
         }
-
 
     }
 
