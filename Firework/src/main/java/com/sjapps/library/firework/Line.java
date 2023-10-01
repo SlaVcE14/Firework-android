@@ -14,7 +14,7 @@ public class Line {
     float dx = 10;
     Point target;
     private int alpha = 255;
-    int time =0;
+    int time = 0;
     private boolean finish;
     int color;
     int l;
