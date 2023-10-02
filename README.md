@@ -52,16 +52,24 @@ firework.setColor(color1, color2);
 ```java
 firework.setLineNum(lineNum);
 ```
+### Example
+```java
+Firework firework = new Firework(x,y)
+	.setColor(0xFFC18B30,0xFFFFDA94)
+	.setLineNum(30)
+	.create();
+```
+## Update firework
+
+```java
+firework.update(canvas,paint);
+```
+
 ### Check if the firework is finished
 ```java
 boolean isFinished = firework.isFinished();
 ```
 
-## Update firework
-```java
-firework.update(canvas,paint);
-
-```
 ## License
 ```
 MIT License
