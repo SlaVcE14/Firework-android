@@ -1,4 +1,5 @@
 # Firework-android
+Simple and easy-to-use Android library for creating fireworks
 ## Download
 ### Step 1. Add the JitPack repository 
 Add it in your root build.gradle at the end of repositories:
