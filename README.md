@@ -28,6 +28,8 @@ dependencies {
 ```
 [![](https://jitpack.io/v/SlaVcE14/Firework-android.svg)](https://jitpack.io/#SlaVcE14/Firework-android)
 
+## [Example code](https://github.com/SlaVcE14/Firework-android/tree/main/app/src/main)
+
 ## Create a firework
 ```java
 Firework firework = new Firework(x,y,color1,color2).create();
